@@ -1,0 +1,169 @@
+{
+ "model": "xt_alibi",
+ "repo": "(new) lucidrains/x-transformers 2.31.7",
+ "target_repo": "LM_Dec_Base_ALiBi",
+ "category": "Base",
+ "upstream": "lucidrains/x-transformers (MIT), pip 2.31.7",
+ "unified": [
+  "decoder with ALiBi position bias, no absolute positions (tests length generalisation)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm06v",
+ "started": "2026-11-02 07:48:06",
+ "smoke": false,
+ "weights": "lm06long_model.pt",
+ "rows": {
+  "512": {
+   "normal": {
+    "acc": 0.3916015625,
+    "acc_updated": 0.736328125,
+    "acc_unchanged": 0.046875,
+    "stale_rate": 0.0078125,
+    "by_distance": {
+     "0-256": [
+      0.699,
+      93
+     ],
+     "256-1024": [
+      0.361,
+      931
+     ],
+     "1024-4096": [
+      null,
+      0
+     ],
+     "4096-inf": [
+      null,
+      0
+     ]
+    }
+   },
+   "nohead": {
+    "acc": 0.072265625,
+    "acc_updated": 0.01953125,
+    "acc_unchanged": 0.125,
+    "stale_rate": 0.154296875,
+    "by_distance": {
+     "0-256": [
+      0.01,
+      103
+     ],
+     "256-1024": [
+      0.079,
+      921
+     ],
+     "1024-4096": [
+      null,
+      0
+     ],
+     "4096-inf": [
+      null,
+      0
+     ]
+    }
+   }
+  },
+  "2048": {
+   "normal": {
+    "acc": 0.3505859375,
+    "acc_updated": 0.6484375,
+    "acc_unchanged": 0.052734375,
+    "stale_rate": 0.015625,
+    "by_distance": {
+     "0-256": [
+      0.5,
+      2
+     ],
+     "256-1024": [
+      0.65,
+      103
+     ],
+     "1024-4096": [
+      0.317,
+      919
+     ],
+     "4096-inf": [
+      null,
+      0
+     ]
+    }
+   },
+   "nohead": {
+    "acc": 0.0849609375,
+    "acc_updated": 0.072265625,
+    "acc_unchanged": 0.09765625,
+    "stale_rate": 0.12890625,
+    "by_distance": {
+     "0-256": [
+      null,
+      0
+     ],
+     "256-1024": [
+      0.071,
+      99
+     ],
+     "1024-4096": [
+      0.086,
+      925
+     ],
+     "4096-inf": [
+      null,
+      0
+     ]
+    }
+   }
+  },
+  "8192": {
+   "normal": {
+    "acc": 0.1572265625,
+    "acc_updated": 0.291015625,
+    "acc_unchanged": 0.0234375,
+    "stale_rate": 0.021484375,
+    "by_distance": {
+     "0-256": [
+      null,
+      0
+     ],
+     "256-1024": [
+      0.2,
+      5
+     ],
+     "1024-4096": [
+      0.371,
+      89
+     ],
+     "4096-inf": [
+      0.137,
+      930
+     ]
+    }
+   },
+   "nohead": {
+    "acc": 0.0947265625,
+    "acc_updated": 0.138671875,
+    "acc_unchanged": 0.05078125,
+    "stale_rate": 0.060546875,
+    "by_distance": {
+     "0-256": [
+      null,
+      0
+     ],
+     "256-1024": [
+      null,
+      0
+     ],
+     "1024-4096": [
+      0.202,
+      99
+     ],
+     "4096-inf": [
+      0.083,
+      925
+     ]
+    }
+   }
+  }
+ },
+ "seconds": 2560.2
+}

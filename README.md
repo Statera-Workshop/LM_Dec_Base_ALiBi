@@ -4,7 +4,7 @@ ALiBi - Base family, decoder-only byte-level language model, standardised in the
 
 ## Status
 
-- Verification level: **Benchmarked (3 seed-repeat runs, see results)**
+- Verification level: **Benchmarked (6 seed-repeat runs, see results)**
 - Failure class: Note: hard recall learned in about half of the training runs (seed-dependent)
 
 ## Provenance
@@ -34,6 +34,9 @@ All models share one protocol: 256-byte vocabulary, dim 512, 6 layers, 8 heads x
 - LM-05 recall `lm05v3longs2`: 4 pairs @ 512: 0.29 (keys removed 0.28); 4 pairs @ 2048: 0.30 (keys removed 0.24); 4 pairs @ 8192: 0.26 (keys removed 0.27); 16 pairs @ 512: 0.06 (keys removed 0.08); 16 pairs @ 2048: 0.08 (keys removed 0.07); 16 pairs @ 8192: 0.07 (keys removed 0.07)
 - LM-06 memory update `lm06`: @512: latest 0.64, unchanged 0.06, stale 0.02; @2048: latest 0.52, unchanged 0.05, stale 0.03
 - LM-06 memory update `lm06long`: @512: latest 0.74, unchanged 0.05, stale 0.01; @2048: latest 0.66, unchanged 0.06, stale 0.01; @8192: latest 0.28, unchanged 0.02, stale 0.02
+- LM-06 memory update `lm06s2`: @512: latest 0.63, unchanged 0.05, stale 0.02; @2048: latest 0.47, unchanged 0.05, stale 0.03
+- LM-06 memory update `lm06s3`: @512: latest 0.64, unchanged 0.05, stale 0.02; @2048: latest 0.43, unchanged 0.03, stale 0.01
+- LM-06 memory update `lm06longs2`: @512: latest 0.71, unchanged 0.05, stale 0.01; @2048: latest 0.66, unchanged 0.07, stale 0.02; @8192: latest 0.33, unchanged 0.04, stale 0.02
 
 ## Tests
 
